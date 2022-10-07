@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./CSS/all.min.css">
+    <link rel="stylesheet" href="./CSS/bootstrap.min.css">
+    <link rel="stylesheet" href="./CSS/main.css">
+
+    <title>Slider | HTTP Req</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md bg-light py-3">
+        <div class="container">
+            <a class="navbar-brand fw-bold fs-4 text-secondary" href="#">HTTP Request</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fa-solid fa-bars text-secondary fs-1"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 mt-3 mt-md-0">
+                    <li class="nav-item">
+                        <a class="nav-link active fs-5 text-start text-md-center fw-bold py-2 px-3" aria-current="page"
+                            href="">Pizza</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-start text-md-center fw-bold py-2 px-3" href="">Pasta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-start text-md-center fw-bold py-2 px-3" href="">Steak</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-start text-md-center fw-bold py-2 px-3" href="">Onion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link fs-5 text-start text-md-center fw-bold py-2 px-3" href="">Cake</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <header class="p-5">
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 gy-4 gx-4">
+
+            </div>
+        </div>
+    </header>
+
+    <div id="pop-up" class="pop-up d-none">
+        <div class="container h-100 d-flex-center">
+            <div class="pop position-relative">
+                <img src="" alt="" id="pop_img" class="pop-img img-fluid">
+                <div
+                    class="option h-100 w-100 py-3 text-secondary fs-2 d-flex flex-column justify-content-between position-absolute top-0">
+                    <div class="opt text-end pe-2">
+                        <i class="fa-solid fa-xmark exit" id="exit"></i>
+                    </div>
+                    <div class="opt d-flex justify-content-between px-2">
+                        <i class="fa-solid fa-angle-left angLeft"></i>
+                        <i class="fa-solid fa-angle-right angRight"></i>
+                    </div>
+                    <div class="opt text-center bg-light bg-opacity-75 p-2">
+                        <h2 class="pop-h2 text-uppercase fw-bold" id="pop-h2" title=""></h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./JS/all.min.js"></script>
+    <script src="./JS/bootstrap.bundle.min.js"></script>
+    <script src="./JS/main.js"></script>
+</body>
+
+</html>

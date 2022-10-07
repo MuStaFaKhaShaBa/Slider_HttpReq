@@ -1,0 +1,135 @@
+body {
+    -webkit-text-size-adjust: 100%;
+    background-color: var(--bs-secondary);
+}
+::-webkit-scrollbar {
+    width: 0.7rem;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track {
+    background-color: var(--bs-gray-300);
+    border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: var(--bs-gray-600);
+    border-radius: 10px;
+}
+.d-flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* |=> N A V - B A R <=| */
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem var(--bs-secondary);
+}
+.navbar-nav .nav-link {
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+    color: var(--bs-secondary);
+}
+.navbar-nav .nav-link::before {
+    content: "";
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(var(--bs-secondary-rgb), 0.25);
+    border-top: 5px solid var(--bs-secondary);
+    z-index: -1;
+    transition: 0.3s;
+    color: var(--bs-primary);
+}
+.navbar-nav .nav-link:hover {
+    color: #fff;
+}
+.navbar-nav .nav-link:hover::before {
+    width: 100%;
+}
+/* |=> N A V - B A R <=| */
+
+/* |=> H E A D E R - C O N T A I N E R <=| */
+header {
+    height: calc(100vh - 78px);
+}
+/* Put Customize Size Becuase That Photos Doesn't Have The Same Size  */
+header .row > div > div {
+    overflow: hidden;
+    height: 250px;
+}
+header .row div img.img-fluid {
+    transition: 0.3s;
+    width: 100% !important;
+    height: 100% !important;
+}
+/* Put Customize Size Becuase That Photos Doesn't Have The Same Size  */
+header .row div:hover img.img-fluid {
+    transform: scale(1.2) rotate(4deg);
+    max-height: 100%;
+}
+header .content {
+    transform: translateY(100%);
+    transition: 0.3s;
+}
+header .row > div:hover .content {
+    transform: translateY(0%);
+}
+
+/* |=> H E A D E R - C O N T A I N E R <=| */
+
+/* |=> P O P - U P <=| */
+#pop-up {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    background-color: rgba(var(--bs-secondary-rgb), 0.5);
+}
+
+#pop-up .container .pop {
+    background-color: #fff;
+    padding: 5px;
+    max-width: 700px;
+    max-height: 70vh;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#pop-up .container .pop .option svg {
+    background: transparent;
+    padding: 1rem;
+    transition: 0.3s;
+    cursor: pointer;
+}
+#pop-up .container .pop .option svg:hover {
+    background-color: var(--bs-gray-500);
+}
+#pop-up .container .pop .option {
+    max-width: 98.5%;
+}
+#pop-up .container .pop .option div:last-child h2,
+header .content h2 {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: 100%;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+/* |=> P O P - U P <=| */
+@media screen and (max-width: 991px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 13px;
+    }
+}
+@media screen and (max-width: 600px) {
+    html {
+        font-size: 12px;
+    }
+}
